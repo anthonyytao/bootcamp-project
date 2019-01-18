@@ -22,12 +22,12 @@ module.exports = gql`
 
   type CreatePostReturn {
     post: Post
-    error: Error
+    error: String
   }
 
   type EditPostReturn {
     post: Post
-    error: Error
+    error: String
   }
 
   input CreateUserInput {
@@ -64,15 +64,12 @@ module.exports = gql`
   type Post {
     id: ID!
     content: String!
+    date: String!
   }
 
   type LoginReturn {
     user: User
     token: String
-    error: Error
-  }
-
-  type Error {
-    message: String
+    error: String
   }
 `

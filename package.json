@@ -34,7 +34,7 @@
     "lint": "npm run js-lint",
     "start": "node index.js",
     "reset": "node index.js --force",
-    "copy-env": "cp sample.env .env",
+    "copy-env": "copy sample.env .env",
     "setup-db": "createdb bootcampproject",
     "db": "psql -U admin postgres"
   },

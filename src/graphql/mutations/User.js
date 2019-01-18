@@ -21,7 +21,7 @@ const createUser = async (obj, { input }) => {
 
   if (result) {
     return {
-      error: { message: 'Email already exists!' },
+      error: 'Email already exists!',
     }
   }
 
@@ -39,7 +39,7 @@ const createUser = async (obj, { input }) => {
 
   if (!user) {
     return {
-      error: { message: 'There was an error registering your information.' },
+      error: 'There was an error registering your information.',
     }
   }
 
